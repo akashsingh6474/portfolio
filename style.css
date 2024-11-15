@@ -1,70 +1,22 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
-h1, h2, h3 {
-    color: #333;
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
 
-nav ul {
-    display: flex;
-    list-style-type: none;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #007bff;
-}
-
-.section {
-    margin: 50px 0;
-}
-
-ul.skills-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-ul.skills-list li {
-    font-size: 1.2rem;
-}
-
-ul.skills-list i {
-    margin-right: 10px;
-    font-size: 1.5rem;
-}
-
-.project a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-.project a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background-color: #f8f9fa;
-    text-align: center;
-    padding: 20px 0;
-}
+header h1 {
+  font-size: 2
