@@ -1,143 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Akash Singh | DevOps Engineer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akash Singh | DevOps Engineer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Akash Singh</h1>
-            <p>DevOps Engineer | Cloud Enthusiast</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="container">
+      <h1>Akash Singh</h1>
+      <p>DevOps Engineer</p>
+      <p>+91-7412946190 | <a href="mailto:akashsingh6474@gmail.com">akashsingh6474@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/akashs01" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/akashsingh6474" target="_blank">GitHub</a> |
+        <a href="https://instagram.com/akashsingh6474" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Hi! I'm Akash Singh, a DevOps Engineer with expertise in deploying scalable applications using tools like Docker, Kubernetes, and Jenkins. 
-                I have a strong passion for serverless architecture, cloud computing, and automation, and I enjoy creating reliable infrastructure that promotes efficient development cycles.
-                Recently, I optimized deployment processes during my internship, achieving improved scalability and uptime.
-            </p>
-        </div>
-    </section>
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a DevOps Engineer with a passion for automating processes and optimizing infrastructure. I specialize in cloud technologies, CI/CD pipelines, and containerization with Docker and Kubernetes.</p>
+    </div>
+  </section>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div id="project-list"></div>
-        </div>
-    </section>
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Master of Computer Applications</strong>, National Institute of Technology, Agartala (Aug 2022 – Present) | CGPA: 7.48/10.00</li>
+        <li><strong>Bachelor of Computer Applications</strong>, University of Rajasthan (July 2018 – Oct 2021) | Percentage: 63.2%</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul id="skills-list" class="skills-list"></ul>
-        </div>
-    </section>
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>DevOps Engineer Intern</strong>, CloudPlay Solutions (June 2024 – Sept 2024)
+          <ul>
+            <li>Deployed applications on Hostinger VPS with Nginx, Docker, and MySQL.</li>
+            <li>Automated deployment processes using Jenkins, improving system reliability.</li>
+            <li>Enhanced scalability and uptime for better user experience.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <div id="contact-info"></div>
-        </div>
-    </section>
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3><a href="doctor-on-call.html">Doctor On Call</a></h3>
+        <p>Deployed on Hostinger VPS with React, Node.js, MySQL, Docker, PM2, and Nginx.</p>
+        <p><strong>Technologies:</strong> React, Node.js, MySQL, Docker, Jenkins, PM2, Nginx</p>
+      </div>
+      <div class="project">
+        <h3><a href="wanderlust.html">Wanderlust</a></h3>
+        <p>A platform designed to share captivating travel stories.</p>
+        <p><strong>Technologies:</strong> React, Node.js, MongoDB, Docker, Jenkins, AWS</p>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Akash Singh. All rights reserved.</p>
-        </div>
-    </footer>
+  <section id="skills">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> C++, Python</li>
+        <li><strong>DevOps Tools:</strong> Docker, Jenkins, Kubernetes, Git, Shell Script</li>
+        <li><strong>Cloud:</strong> AWS</li>
+        <li><strong>Databases:</strong> MySQL, MongoDB</li>
+      </ul>
+    </div>
+  </section>
 
-    <script>
-        // Project Data
-        const projects = [
-            {
-                name: "Doctor On Call",
-                description: "Deployed on Hostinger VPS with MySQL for efficient data management. Configured Nginx as a reverse proxy for enhanced security and response times. Leveraged Docker for consistent environments, and set up Jenkins for CI/CD, reducing deployment time by 40%.",
-                link: "https://clouldplaydoctor.online/"
-            },
-            {
-                name: "Django Todo App",
-                description: "Containerized a Django app with Docker, achieving faster deployments. Leveraged Kubernetes for orchestrated deployment, improving app reliability. Managed version control with Git for an organized codebase.",
-                link: "https://github.com/akashsingh6474/django-todo-cicd"
-            },
-            {
-                name: "Static Website on AWS S3",
-                description: "Deployed a static website with 100% uptime using AWS S3. Configured S3 buckets for public access and integrated the site with a custom domain.",
-                link: "https://cloudplaysolutions.in/"
-            },
-            {
-                name: "Wanderlust: A Travel Blog to Explore the World Through Stories",
-                description: "Wanderlust is a platform designed to inspire travel enthusiasts by providing captivating travel stories from around the world. Combining storytelling with technology, it allows users to connect emotionally with diverse cultures and experiences.",
-                link: "https://your-wanderlust-project-link.com/"
-            }
-        ];
+  <section id="achievements">
+    <div class="container">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Photography Team Coordinator at University Maharaja College</li>
+        <li>1st Prize in Photography at an intra-college fest</li>
+        <li>NSS Volunteer, engaging in community service projects</li>
+      </ul>
+    </div>
+  </section>
 
-        // Skills Data
-        const skills = [
-            "Linux",
-            "Docker",
-            "Kubernetes",
-            "Jenkins",
-            "AWS",
-            "MySQL",
-            "Terraform",
-            "Python",
-            "Shell Scripting",
-            "Git",
-            "C++"
-        ];
+  <section id="certifications">
+    <div class="container">
+      <h2>Certifications</h2>
+      <ul>
+        <li><strong>DevOps Zero to Hero</strong> - TrainwithShubham, Dec 2023</li>
+      </ul>
+    </div>
+  </section>
 
-        // Contact Information
-        const contactInfo = {
-            phone: "+91-7412946190",
-            email: "akashsingh6474@gmail.com",
-            linkedin: "https://www.linkedin.com/in/akashs01/",
-            github: "https://github.com/akashsingh6474"
-        };
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Akash Singh. All Rights Reserved.</p>
+    </div>
+  </footer>
 
-        // Render Projects
-        const projectList = document.getElementById('project-list');
-        projects.forEach(project => {
-            const projectDiv = document.createElement('div');
-            projectDiv.classList.add('project');
-            projectDiv.innerHTML = `
-                <h3>${project.name}</h3>
-                <p>${project.description}</p>
-                <a href="${project.link}" target="_blank">Visit Project</a>
-            `;
-            projectList.appendChild(projectDiv);
-        });
-
-        // Render Skills
-        const skillsList = document.getElementById('skills-list');
-        skills.forEach(skill => {
-            const skillItem = document.createElement('li');
-            skillItem.textContent = skill;
-            skillsList.appendChild(skillItem);
-        });
-
-        // Render Contact Info
-        const contactInfoDiv = document.getElementById('contact-info');
-        contactInfoDiv.innerHTML = `
-            <p>Phone: <a href="tel:${contactInfo.phone}">${contactInfo.phone}</a></p>
-            <p>Email: <a href="mailto:${contactInfo.email}">${contactInfo.email}</a></p>
-            <p>LinkedIn: <a href="${contactInfo.linkedin}" target="_blank">${contactInfo.linkedin}</a></p>
-            <p>GitHub: <a href="${contactInfo.github}" target="_blank">${contactInfo.github}</a></p>
-        `;
-    </script>
+  <script src="scripts.js"></script>
 </body>
 </html>
