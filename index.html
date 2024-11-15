@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Akash Singh | DevOps Engineer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -37,40 +40,11 @@
     <section id="projects" class="section">
         <div class="container">
             <h2>Projects</h2>
+            <!-- Repeat this block for each project -->
             <div class="project">
                 <h3>Doctor On Call</h3>
                 <p>Deployed on Hostinger VPS with MySQL for efficient data management. Configured Nginx as a reverse proxy for enhanced security and response times. Leveraged Docker for consistent environments, and set up Jenkins for CI/CD, reducing deployment time by 40%.</p>
                 <a href="https://clouldplaydoctor.online/" target="_blank">Visit Project</a>
-            </div>
-            <div class="project">
-                <h3>Django Todo App</h3>
-                <p>Containerized a Django app with Docker, achieving faster deployments. Leveraged Kubernetes for orchestrated deployment, improving app reliability. Managed version control with Git for an organized codebase.</p>
-                <a href="https://github.com/akashsingh6474/django-todo-cicd" target="_blank">View Repository</a>
-            </div>
-            <div class="project">
-                <h3>Static Website on AWS S3</h3>
-                <p>Deployed a static website with 100% uptime using AWS S3. Configured S3 buckets for public access and integrated the site with a custom domain.</p>
-                <a href="https://cloudplaysolutions.in/" target="_blank">Visit Project</a>
-            </div>
-            <div class="project">
-                <h3>Wanderlust: A Travel Blog to Explore the World Through Stories</h3>
-                <p>
-                    Wanderlust is a platform designed to inspire travel enthusiasts by providing captivating travel stories from around the world. 
-                    Combining storytelling with technology, it allows users to connect emotionally with diverse cultures and experiences.
-                </p>
-                <ul>
-                    <li><strong>Frontend:</strong> React</li>
-                    <li><strong>Backend:</strong> Node.js</li>
-                    <li><strong>Database:</strong> MongoDB</li>
-                    <li><strong>Containerization:</strong> Docker, Docker Compose</li>
-                    <li><strong>CI/CD:</strong> Jenkins</li>
-                    <li><strong>Security and Code Quality:</strong> Trivy, SonarQube, OWASP</li>
-                    <li><strong>Cloud Deployment:</strong> AWS</li>
-                    <li><strong>Version Control:</strong> GitHub</li>
-                </ul>
-                <p>
-                    This project integrates storytelling with efficient DevOps workflows, implementing secure CI/CD pipelines and adopting DevSecOps tools for codebase and environment security.
-                </p>
             </div>
         </div>
     </section>
@@ -79,17 +53,16 @@
         <div class="container">
             <h2>Skills</h2>
             <ul class="skills-list">
-                <li>Linux</li>
-                <li>Docker</li>
-                <li>Kubernetes</li>
-                <li>Jenkins</li>
-                <li>AWS</li>
-                <li>MySQL</li>
-                <li>Terraform</li>
-                <li>Python</li>
-                <li>Shell Scripting</li>
-                <li>Git</li>
-                <li>C++</li>
+                <li><i class="fa fa-linux"></i> Linux</li>
+                <li><i class="fa fa-docker"></i> Docker</li>
+                <li><i class="fa fa-cogs"></i> Kubernetes</li>
+                <li><i class="fa fa-git"></i> Git</li>
+                <li><i class="fa fa-aws"></i> AWS</li>
+                <li><i class="fa fa-database"></i> MySQL</li>
+                <li><i class="fa fa-code"></i> Terraform</li>
+                <li><i class="fa fa-python"></i> Python</li>
+                <li><i class="fa fa-terminal"></i> Shell Scripting</li>
+                <li><i class="fa fa-cloud"></i> Cloud Services</li>
             </ul>
         </div>
     </section>
@@ -109,5 +82,18 @@
             <p>&copy; 2024 Akash Singh. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Smooth scroll on anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
