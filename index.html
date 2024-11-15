@@ -37,80 +37,21 @@
     <section id="projects" class="section">
         <div class="container">
             <h2>Projects</h2>
-
-            <!-- Project 1: Doctor On Call -->
-            <div class="project">
-                <h3>Doctor On Call</h3>
-                <p>Deployed on Hostinger VPS with MySQL for efficient data management. Configured Nginx as a reverse proxy for enhanced security and response times. Leveraged Docker for consistent environments, and set up Jenkins for CI/CD, reducing deployment time by 40%.</p>
-                <a href="https://clouldplaydoctor.online/" target="_blank">Visit Project</a>
-            </div>
-
-            <!-- Project 2: Django Todo App -->
-            <div class="project">
-                <h3>Django Todo App</h3>
-                <p>Containerized a Django app with Docker, achieving faster deployments. Leveraged Kubernetes for orchestrated deployment, improving app reliability. Managed version control with Git for an organized codebase.</p>
-                <a href="https://github.com/akashsingh6474/django-todo-cicd" target="_blank">View Repository</a>
-            </div>
-
-            <!-- Project 3: Static Website on AWS S3 -->
-            <div class="project">
-                <h3>Static Website on AWS S3</h3>
-                <p>Deployed a static website with 100% uptime using AWS S3. Configured S3 buckets for public access and integrated the site with a custom domain.</p>
-                <a href="https://cloudplaysolutions.in/" target="_blank">Visit Project</a>
-            </div>
-
-            <!-- Project 4: Wanderlust: A Travel Blog to Explore the World Through Stories -->
-            <div class="project">
-                <h3>Wanderlust: A Travel Blog to Explore the World Through Stories</h3>
-                <p>
-                    Wanderlust is a platform designed to inspire travel enthusiasts by providing captivating travel stories from around the world. 
-                    Combining storytelling with technology, it allows users to connect emotionally with diverse cultures and experiences.
-                </p>
-                <ul>
-                    <li><strong>Frontend:</strong> React</li>
-                    <li><strong>Backend:</strong> Node.js</li>
-                    <li><strong>Database:</strong> MongoDB</li>
-                    <li><strong>Containerization:</strong> Docker, Docker Compose</li>
-                    <li><strong>CI/CD:</strong> Jenkins</li>
-                    <li><strong>Security and Code Quality:</strong> Trivy, SonarQube, OWASP</li>
-                    <li><strong>Cloud Deployment:</strong> AWS</li>
-                    <li><strong>Version Control:</strong> GitHub</li>
-                </ul>
-                <p>
-                    This project integrates storytelling with efficient DevOps workflows, implementing secure CI/CD pipelines and adopting DevSecOps tools for codebase and environment security.
-                </p>
-                <a href="https://your-wanderlust-project-link.com/" target="_blank">Visit Project</a>
-            </div>
-
+            <div id="project-list"></div>
         </div>
     </section>
 
     <section id="skills" class="section">
         <div class="container">
             <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>Linux</li>
-                <li>Docker</li>
-                <li>Kubernetes</li>
-                <li>Jenkins</li>
-                <li>AWS</li>
-                <li>MySQL</li>
-                <li>Terraform</li>
-                <li>Python</li>
-                <li>Shell Scripting</li>
-                <li>Git</li>
-                <li>C++</li>
-            </ul>
+            <ul id="skills-list" class="skills-list"></ul>
         </div>
     </section>
 
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
-            <p>Phone: <a href="tel:+91-7412946190">+91-7412946190</a></p>
-            <p>Email: <a href="mailto:akashsingh6474@gmail.com">akashsingh6474@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/akashs01/" target="_blank">linkedin.com/in/akashs01</a></p>
-            <p>GitHub: <a href="https://github.com/akashsingh6474" target="_blank">github.com/akashsingh6474</a></p>
+            <div id="contact-info"></div>
         </div>
     </section>
 
@@ -119,5 +60,84 @@
             <p>&copy; 2024 Akash Singh. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Project Data
+        const projects = [
+            {
+                name: "Doctor On Call",
+                description: "Deployed on Hostinger VPS with MySQL for efficient data management. Configured Nginx as a reverse proxy for enhanced security and response times. Leveraged Docker for consistent environments, and set up Jenkins for CI/CD, reducing deployment time by 40%.",
+                link: "https://clouldplaydoctor.online/"
+            },
+            {
+                name: "Django Todo App",
+                description: "Containerized a Django app with Docker, achieving faster deployments. Leveraged Kubernetes for orchestrated deployment, improving app reliability. Managed version control with Git for an organized codebase.",
+                link: "https://github.com/akashsingh6474/django-todo-cicd"
+            },
+            {
+                name: "Static Website on AWS S3",
+                description: "Deployed a static website with 100% uptime using AWS S3. Configured S3 buckets for public access and integrated the site with a custom domain.",
+                link: "https://cloudplaysolutions.in/"
+            },
+            {
+                name: "Wanderlust: A Travel Blog to Explore the World Through Stories",
+                description: "Wanderlust is a platform designed to inspire travel enthusiasts by providing captivating travel stories from around the world. Combining storytelling with technology, it allows users to connect emotionally with diverse cultures and experiences.",
+                link: "https://your-wanderlust-project-link.com/"
+            }
+        ];
+
+        // Skills Data
+        const skills = [
+            "Linux",
+            "Docker",
+            "Kubernetes",
+            "Jenkins",
+            "AWS",
+            "MySQL",
+            "Terraform",
+            "Python",
+            "Shell Scripting",
+            "Git",
+            "C++"
+        ];
+
+        // Contact Information
+        const contactInfo = {
+            phone: "+91-7412946190",
+            email: "akashsingh6474@gmail.com",
+            linkedin: "https://www.linkedin.com/in/akashs01/",
+            github: "https://github.com/akashsingh6474"
+        };
+
+        // Render Projects
+        const projectList = document.getElementById('project-list');
+        projects.forEach(project => {
+            const projectDiv = document.createElement('div');
+            projectDiv.classList.add('project');
+            projectDiv.innerHTML = `
+                <h3>${project.name}</h3>
+                <p>${project.description}</p>
+                <a href="${project.link}" target="_blank">Visit Project</a>
+            `;
+            projectList.appendChild(projectDiv);
+        });
+
+        // Render Skills
+        const skillsList = document.getElementById('skills-list');
+        skills.forEach(skill => {
+            const skillItem = document.createElement('li');
+            skillItem.textContent = skill;
+            skillsList.appendChild(skillItem);
+        });
+
+        // Render Contact Info
+        const contactInfoDiv = document.getElementById('contact-info');
+        contactInfoDiv.innerHTML = `
+            <p>Phone: <a href="tel:${contactInfo.phone}">${contactInfo.phone}</a></p>
+            <p>Email: <a href="mailto:${contactInfo.email}">${contactInfo.email}</a></p>
+            <p>LinkedIn: <a href="${contactInfo.linkedin}" target="_blank">${contactInfo.linkedin}</a></p>
+            <p>GitHub: <a href="${contactInfo.github}" target="_blank">${contactInfo.github}</a></p>
+        `;
+    </script>
 </body>
 </html>
